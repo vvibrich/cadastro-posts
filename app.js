@@ -44,6 +44,7 @@ const Post = require('./models/Post')
         })
     })
 
-app.listen(8081, function(){
-    console.log("Servidor rodando na url http://localhost:8081");
+    port = process.env.PORT || 8080
+app.listen(port, function(){
+    console.log("Servidor rodando na porta "+port);
 }); 
